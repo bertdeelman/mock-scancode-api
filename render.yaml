@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mock-scancode-api
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: VALID_SCANCODES
+        value: "ABC12,A123,XYZ"
